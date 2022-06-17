@@ -1,0 +1,149 @@
+<div id="banner">
+    <!-- Physics -->
+    <div *ngIf="physhow" class="container">
+      <div *ngFor="let q of phyQuestion" class="box">
+        <div class="question">
+          {{ q.question }}
+        </div>
+        <div class="option">
+          {{ q.optionA }}
+        </div>
+        <div class="option">
+          {{ q.optionB }}
+        </div>
+        <div class="option">
+          {{ q.optionC }}
+        </div>
+        <div class="option">
+          {{ q.optionD }}
+        </div>
+        <div *ngIf="showans" id="{{q.id}}" class="option right"> {{q.key}}</div>
+      </div>
+    </div>
+  
+    <!-- Chemistery -->
+    <div *ngIf="cheshow" class="container">
+      <div *ngFor="let q of cheQuestion" class="box">
+        <div class="question">
+          {{ q.question }}
+        </div>
+        <div class="option">
+          {{ q.optionA }}
+        </div>
+        <div class="option">
+          {{ q.optionB }}
+        </div>
+        <div class="option">
+          {{ q.optionC }}
+        </div>
+        <div class="option">
+          {{ q.optionD }} right
+        </div>
+        <div *ngIf="showans" id="{{q.id}}" class="option right"> {{q.key}}</div>
+      </div>
+    </div>
+    <div *ngIf="mathshow" class="container">
+      <div *ngFor="let q of mathQuestion" class="box">
+        <div class="question">
+          {{ q.question }}
+        </div>
+        <div class="option">
+          {{ q.optionA }}
+        </div>
+        <div class="option">
+          {{ q.optionB }}
+        </div>
+        <div class="option">
+          {{ q.optionC }}
+        </div>
+        <div class="option">
+          {{ q.optionD }}
+        </div>
+        <div *ngIf="showans" id="{{q.id}}" class="option right"> {{q.key}}</div>
+
+      </div>
+    </div>
+    <div *ngIf="javashow" class="container">
+      <div *ngFor="let q of javaQuestion" class="box">
+        <div class="question">
+          {{ q.question }}
+        </div>
+        <div class="option">
+          {{ q.optionA }}
+        </div>
+        <div class="option">
+          {{ q.optionB }}
+        </div>
+        <div class="option">
+          {{ q.optionC }}
+        </div>
+        <div class="option">
+          {{ q.optionD }}
+        </div>
+        <div *ngIf="showans" id="{{q.id}}" class="option right"> {{q.key}}</div>
+      </div>
+    </div>
+    <div *ngIf="jsshow" class="container">
+      <div *ngFor="let q of jsQuestion" class="box">
+        <div class="question">
+          {{ q.question }}
+        </div>
+        <div class="option">
+          {{ q.optionA }}
+        </div>
+        <div class="option">
+          {{ q.optionB }}
+        </div>
+        <div class="option">
+          {{ q.optionC }}
+        </div>
+        <div class="option">
+          {{ q.optionD }}
+        </div>
+        <div *ngIf="showans" id="{{q.id}}" class="option right"> {{q.key}}</div>
+      </div>
+    </div>
+    <div *ngIf="cssshow" class="container">
+      <div *ngFor="let q of cssQuestion" class="box">
+        <div class="question">
+          {{ q.question }}
+        </div>
+        <div class="option">
+          {{ q.optionA }}
+        </div>
+        <div class="option">
+          {{ q.optionB }}
+        </div>
+        <div class="option">
+          {{ q.optionC }}
+        </div>
+        <div class="option">
+          {{ q.optionD }}
+        </div>
+        <div *ngIf="showans" id="{{q.id}}" class="option right"> {{q.key}}</div>
+      </div>
+    </div>
+    <div *ngIf="htmlshow" class="container">
+      <div *ngFor="let q of htmlQuestion" class="box">
+        <div class="question">
+          {{ q.question }}
+        </div>
+        <div class="option">
+          {{ q.optionA }}
+        </div>
+        <div class="option">
+          {{ q.optionB }}
+        </div>
+        <div class="option">
+          {{ q.optionC }}
+        </div>
+        <div class="option">
+          {{ q.optionD }}
+        </div>
+        <div *ngIf="showans" id="{{q.id}}" class="option right "> {{q.key}}</div>
+      </div>
+    </div>
+
+    
+    <div class="showAns" (click)="showanswer()" >SHOW ANSWER</div>
+</div> 

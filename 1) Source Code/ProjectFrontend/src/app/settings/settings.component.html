@@ -1,0 +1,29 @@
+<div id="banner">
+ <div class="mainbox">
+   <div class="heading"><h3>SETTINGS</h3></div>
+   <button class="btn" (click)="name()">CHANGE NAME </button>
+   <button class="btn" (click)="password()">CHANGE PASSWORD</button>
+   <button class="btn" (click)="mobile()">CHANGE MOBILE NUMBER</button>
+ </div>
+
+
+ <div *ngIf="nameshow" class="box">
+   <div class="msg">{{msg}}</div>
+   <input type="email" class="box" placeholder="Enter your Email" [(ngModel)]="emailid">
+   <input type="text" class="box" placeholder="Enter new Name" [(ngModel)]="student.name" >
+   <button class="box" (click)="updatename()">UPDATE</button>
+ </div>
+ <div *ngIf="passwordshow" class="box">
+  <div class="msg">{{msg}}</div>
+   <input type="email" class="box" placeholder="Enter your Email" [(ngModel)]="emailid">
+   <input type="password" class="box" (keyup)="check()" placeholder="Enter new Password" [(ngModel)]="student.password" >
+   <button class="box" [disabled]="state" (click)="updatepassword()">UPDATE</button>
+ </div>
+ <div *ngIf="mobileshow" class="box">
+  <div class="msg">{{msg}}</div>
+   <input type="email" class="box" placeholder="Enter your Email" [(ngModel)]="emailid">
+   <input type="number" class="box" placeholder="Enter new Mobile Number" [(ngModel)]="student.mobilenumber" >
+   <button class="box" (click)="updatemobile()">UPDATE</button>
+ </div>
+
+</div>

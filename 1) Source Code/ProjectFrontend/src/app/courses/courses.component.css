@@ -1,0 +1,94 @@
+div.middlepannel {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 5%;
+    width: 85%;
+    height: 300px;
+    font-weight: bold;
+    font-size: large;
+    /* background-color: red; */
+  }
+  div#topic {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+  }
+  div.middlebox {
+    position: relative;
+    top: 30px;
+    left: 3%;
+    margin: 10px 30px;
+    /* background-color: aqua; */
+    height: 250px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: rgb(71, 70, 73) 2px 3px 3px 2px, 2px 3px 3px 2px;
+    overflow: hidden;
+  }
+  div.middlebox:hover {
+    background-color: rgb(12, 131, 228);
+  }
+  img.courses {
+    position: relative;
+    top: 5px;
+    border-radius: 10px;
+  }
+  a.btn {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 20px;
+    background-color: rgb(12, 131, 228);
+    padding: 10px;
+    border: 1.5px solid rgb(16, 5, 5);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  a.btn:hover {
+    box-shadow: rgb(66, 38, 158) 2px 3px 3px 2px, 2px 3px 3px 2px;
+    background-color: white;
+    color: black;
+  }
+  div.downpannel {
+    display: flex;
+    position: absolute;
+    top: 400px;
+    left: 5%;
+    width: 90%;
+    height: 350px;
+    font-weight: bold;
+    font-size: large;
+    /* background-color: red; */
+  }
+  div#topic2 {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+  }
+  div.downbox {
+    position: relative;
+    top: 35px;
+    left: 3%;
+    margin: 10px;
+    /* background-color: aqua; */
+    height: 250px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: rgb(71, 70, 73) 2px 3px 3px 2px, 2px 3px 3px 2px;
+    overflow: hidden;
+  }
+  div.downbox:hover {
+    background-color: rgb(12, 131, 228);
+  }
+ 

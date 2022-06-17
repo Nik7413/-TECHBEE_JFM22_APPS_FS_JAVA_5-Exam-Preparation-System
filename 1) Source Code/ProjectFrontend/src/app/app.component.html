@@ -1,0 +1,65 @@
+<div *ngIf="show" id="leftpannel" class="leftpannel">
+  <img
+    (click)="hamburger()"
+    src="./assets/images/logo.jpg"
+    alt="profile"
+    class="leftpannelelement"
+    id="profile"
+    height="70px"
+    width="70px"
+  />
+  <a [routerLink]="['/dashboard']">
+    <img
+      src="./assets/images/dashboard.png"
+      alt=""
+      class="leftpannellogo"
+      id="logodashboard"
+    />
+  </a>
+  <a [routerLink]="['/dashboard']" class="leftpannelelement" id="dashboard"
+    >DASHBOARD</a
+  >
+  <a [routerLink]="['/courses']">
+    <img
+      src="./assets/images/courses.png"
+      alt=""
+      class="leftpannellogo"
+      id="logocourses"
+    />
+  </a>
+  <a [routerLink]="['/courses']" class="leftpannelelement" id="courses"
+    >COURSES</a
+  >
+  <a [routerLink]="['/assesment']">
+    <img
+      src="./assets/images/assesment.png"
+      alt=""
+      class="leftpannellogo"
+      id="logoassesment"
+    />
+  </a>
+  <a [routerLink]="['/assesment']" class="leftpannelelement" id="assesment"
+    >ASSESSMENT</a
+  >
+  <a [routerLink]="['/settings']">
+    <img
+      src="./assets/images/setting.png"
+      alt=""
+      class="leftpannellogo"
+      id="logosettings"
+    />
+  </a>
+  <a [routerLink]="['/settings']" class="leftpannelelement" id="settings"
+    >SETTINGS</a
+  >
+  <a [routerLink]="['/registration']" (click)="logout()" ><img
+    src="./assets/images/logout.png"
+    alt=""
+    class="leftpannellogo"
+    id="logomode"
+  /></a>
+  <a [routerLink]="['/registration']" (click)="logout()" class="leftpannelelement" id="mode"
+    >LOGOUT</a
+  >
+</div>
+<router-outlet></router-outlet>

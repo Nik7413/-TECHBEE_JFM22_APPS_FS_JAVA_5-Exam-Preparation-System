@@ -1,0 +1,70 @@
+<div class="hero">
+    <div class="form-box">
+        <div class=message>{{message}}</div>
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" (click)="login()">
+          Log In
+        </button>
+        <button type="button" class="toggle-btn" (click)="register()">
+          Register
+        </button>
+      </div>
+      
+      <form (ngSubmit)="loginstudent()" id="login"   class="input-group" >
+        <input
+          type="email"
+          class="input-field"
+          name="emailid"
+          placeholder="Email Id"
+          [(ngModel)]="student.emailid"
+        />
+        <input
+          type="password"
+          class="input-field"
+          name="password"
+          placeholder="Enter Password"
+          [(ngModel)]="student.password"
+        />
+        <button type="submit" class="submit-btn">Log in</button>
+      </form>
+      <form id="register" class="input-group" (ngSubmit)="registerstudent()">
+        <input type="text" class="input-field" name="name" placeholder="Name" [(ngModel)]="student.name" (keyup)="compared()"/>
+        <input
+          type="text"
+          class="input-field" 
+          name="mobilenumber"
+          placeholder="Mobile Number"
+          [(ngModel)]="student.mobilenumber"
+          (keyup)="compared()"
+        />
+        <input
+          type="email"
+          class="input-field" 
+          name="emailid"
+          placeholder="Email Id"
+          [(ngModel)]="student.emailid"
+          (keyup)="compared()"
+        />
+        <input
+          type="password"
+          class="input-field"
+          name="password" 
+          placeholder="Enter Password"
+          [(ngModel)]="student.password"
+          (blur)="check()"
+          (keyup)="compared()"
+        />
+        <input
+          type="password"
+          class="input-field" 
+          name="confirmpassword"
+          placeholder="Confirm Password"
+          [(ngModel)]='compare'
+          (keyup)="compared()"
+        />
+        
+        <button type="submit" class="submit-btn" [disabled]="state">Register</button>
+      </form>
+    </div>
+  </div>

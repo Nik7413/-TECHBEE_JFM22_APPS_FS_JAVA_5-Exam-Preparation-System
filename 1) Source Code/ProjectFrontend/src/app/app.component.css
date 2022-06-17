@@ -1,0 +1,67 @@
+div.leftpannel {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height:900px;
+    width: 5%;
+    background-color: rgb(12, 131, 228);
+    overflow: hidden;
+    z-index: 1;
+  }
+  a.leftpannelelement {
+    display: none;
+    position: relative;
+    top: 30px;
+    width: 50%;
+    border: 1.5px solid rgb(16, 5, 5);
+    margin: 15px 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    color: white;
+    word-wrap: break-word;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  /* ADDITIONAL FEATURE */
+  a.leftpannelelement:hover {
+    box-shadow: rgb(66, 38, 158) 2px 3px 3px 2px, 2px 3px 3px 2px;
+    background-color: white;
+    color: black;
+  }
+  img.leftpannelelement {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 100px;
+    left: 10%;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+  a#mode {
+    margin: 50px 55px;
+    font-weight: bold;
+    width: 45%;
+    padding: 15px;
+    overflow: hidden;
+  }
+  img.leftpannellogo {
+    position: relative;
+    top: 30px;
+    margin: 15px 8px;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    transition: 0.5s;
+    /* box-shadow: rgb(71, 70, 73) 2px 1px 2px 1px, 2px 1px 2px 1px; */
+  }
+  img.leftpannellogo:hover {
+    box-shadow: rgb(66, 38, 158) 2px 3px 3px 2px, 2px 3px 3px 2px;
+    background-color: white;
+    color: black;
+  }

@@ -1,0 +1,41 @@
+<div id="banner">
+
+<div class="bannertop" id="bannertop">
+  <div class="bannertext" id="bannertext">
+    <h3>WELCOME TO EDUBEE. GET YOURSELF PREPARED FOR EXAM AND PROGRAMMING...</h3>
+    <a [routerLink]="['/courses']" href="" class="bannerbtn" id="bannerbtn1"
+      >PREPARE</a
+    >
+    <a [routerLink]="['/assesment']" href="" class="bannerbtn" id="bannerbtn2"
+      >TAKE QUIZ</a
+    >
+  </div>
+
+</div>
+
+<div class="mainbox">
+<!-- Assesment Progress -->
+<div class="container">
+  <p class="para">Assessment Progress</p>
+  <hr class="line">
+  <br>
+  <p class="percentage">{{per | number:'.0'}}%</p>
+  <div class="comp">
+      <div class="prog" style="max-width: {{per}}%;"></div>
+  </div>
+  </div> 
+
+
+<!-- Course progress -->
+<div class="container">
+  <p class="para">Course Progress</p>
+  <hr class="line">
+  <br>
+  <p class="percentage">{{cper | number:'.0'}}%</p>
+  <div class="comp">
+      <div class="prog" style="max-width: {{cper}}%;"></div>
+  </div>
+  </div> 
+
+</div>
+</div>

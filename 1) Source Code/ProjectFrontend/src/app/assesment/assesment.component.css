@@ -1,0 +1,51 @@
+div#banner{
+    position: absolute;
+    left: 5%;
+    height: 270px;
+    width: 95%;
+    height: 900px;
+}
+div.heading{
+    width: 99%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+    font-size:0.7cm;
+    position: relative;
+    top: 5px;
+    text-decoration: underline;
+}
+div.mainbox{
+    background-color: rgb(0, 187, 255);
+    margin: 20px 8%;
+    width: 80%;
+    padding: 25px;
+    position: relative;
+    top: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 0.6cm;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+}
+div.assessment{
+    display: inline-block;
+    width: 30%;
+    padding: 5px;
+}
+a.btn{
+    position: relative;
+    left: 55%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.5s;
+}
+a.btn:hover{
+    box-shadow: rgb(96, 93, 105) 2px 3px 3px 2px, 2px 3px 3px 2px;
+
+}
